@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Conteiner</title>
+
+    <style>
+      .conteiner {
+        display: flex;
+
+        /*sayfa küçülürken kutucukların alt alta sıranlanması için kullanılır */
+
+        flex-wrap: wrap;
+
+        /*sayfa küçülürken kutucukların üstten başlayarak sıranlanması için ise
+        flex-wrap: wrap-reverse; kullanılır */
+
+        background-color: rgb(33, 10, 163);
+        padding: 10px;
+      }
+
+      .items {
+        background-color: darkorchid;
+        color: aliceblue;
+        padding: 30px;
+        margin: 20px;
+        font-size: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="conteiner">
+      <div class="items">item 1</div>
+      <div class="items">item 2</div>
+      <div class="items">item 3</div>
+      <div class="items">item 4</div>
+      <div class="items">item 5</div>
+    </div>
+  </body>
+</html>
